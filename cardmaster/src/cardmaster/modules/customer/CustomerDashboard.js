@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import apiService from '../../core/api/apiService';
-import SummaryCard from '../../core/components/SummaryCard';
-import DataTable from '../../core/components/DataTable';
+import { SummaryCard, DataTable } from '../../core/components/UIComponents';
 
 const CustomerDashboard = () => {
     const [formData, setFormData] = useState({ name: '', email: '', ssn: '', desiredLimit: '' });
