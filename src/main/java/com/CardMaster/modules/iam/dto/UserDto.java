@@ -1,0 +1,19 @@
+package com.CardMaster.modules.iam.dto;
+
+import com.CardMaster.modules.iam.enums.UserEnum;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserDto {
+    private Long userId;
+    private String name;
+    private String email;
+    private String phone;
+    private UserEnum role;
+}
